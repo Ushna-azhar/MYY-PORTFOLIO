@@ -1,12 +1,15 @@
 'use client';
+
 import Image from "next/image";
 import React, { useState } from "react"; 
-
 import TabButton from './TabButton';
 
 // Tab Data: This contains the tab identifiers, labels, and their content
 const TAB_DATA = [
-  { id: 'skills', label: 'Skills', content: (
+  { 
+    id: 'skills', 
+    label: 'Skills', 
+    content: (
       <div className="text-white">
         <h3 className="text-xl font-semibold text-green-800">Skills</h3>
         <ul className="list-disc pl-6 mt-4">
@@ -20,14 +23,20 @@ const TAB_DATA = [
       </div>
     ) 
   },
-  { id: 'education', label: 'Education', content: (
+  { 
+    id: 'education', 
+    label: 'Education', 
+    content: (
       <div className="text-white">
         <h3 className="text-xl font-semibold text-emerald-800">Education</h3>
         <p className="mt-4">Cloud Generative AI from Governor House Karachi</p>
       </div>
     ) 
   },
-  { id: 'experience', label: 'Experience', content: (
+  { 
+    id: 'experience', 
+    label: 'Experience', 
+    content: (
       <div className="text-white">
         <h3 className="text-xl font-semibold text-emerald-800">Experience</h3>
         <ul className="list-disc pl-6 mt-4">
@@ -66,7 +75,7 @@ const Abouts = () => {
         <div className="text-center md:text-left">
           <h2 className="text-emerald-800 text-3xl font-semibold mb-4">About Me</h2>
           <p className="text-green-400 font-mono">
-            A passionate Web Developer and Graphic Designer. I specialize in creating dynamic, responsive websites and designing visually engaging user interfaces. With a strong foundation in both front-end and back-end development, I bring ideas to life with clean code and creative design. I thrive on solving complex problems and delivering seamless user experiences. Let's create something amazing together!
+            A passionate Web Developer and Graphic Designer. I specialize in creating dynamic, responsive websites and designing visually engaging user interfaces. With a strong foundation in both front-end and back-end development, I bring ideas to life with clean code and creative design. I thrive on solving complex problems and delivering seamless user experiences. Let&apos;s create something amazing together!
           </p>
 
           {/* Tab Buttons */}
@@ -103,8 +112,5 @@ const Abouts = () => {
 
 export default Abouts;
 
-          
-          
-         
-         
+      
            
