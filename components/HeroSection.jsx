@@ -1,13 +1,12 @@
-use client';
+'use client';
 
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 
-
+// Dynamically import TypeAnimation to avoid issues with SSR (Server-Side Rendering)
 const TypeAnimation = dynamic(() => import('react-type-animation'), {
-  ssr: false, 
+  ssr: false,  // Disable server-side rendering for this component
 });
 
 const HeroSection = () => {
@@ -93,4 +92,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
