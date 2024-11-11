@@ -1,7 +1,14 @@
-'use client';
+use client';
 
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+
+const TypeAnimation = dynamic(() => import('react-type-animation'), {
+  ssr: false, 
+});
 
 const HeroSection = () => {
   return (
@@ -14,6 +21,7 @@ const HeroSection = () => {
           loop
           src="/videoo.mp4"
           type="video/mp4"
+          alt="Background video showcasing web design and digital marketing"
         />
       </div>
 
@@ -85,3 +93,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
