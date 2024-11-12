@@ -1,7 +1,11 @@
 'use client';
 
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import dynamic from 'next/dynamic';
+
+const TypeAnimation = dynamic(() => import('react-type-animation'), {
+  ssr: false, // Disabling SSR for the animation
+});
 
 const HeroSection = () => {
   return (
@@ -14,6 +18,7 @@ const HeroSection = () => {
           loop
           src="/videoo.mp4"
           type="video/mp4"
+          alt="Background video showcasing web design and digital marketing"
         />
       </div>
 
@@ -22,17 +27,17 @@ const HeroSection = () => {
           <div className="col-span-1 lg:col-span-7 text-center lg:text-left">
             <h1 className="text-emerald-50 mb-6 text-4xl lg:text-7xl font-semibold leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-br">
-                Hello, I'm{' '}
+                Hello, I&apos;m{' '}
               </span>
               <TypeAnimation
                 sequence={[
-                  "Hello, I'm Ushna",
+                  "Hello, I&apos;m Ushna",
                   2000,
-                  "I'm a Website Developer",
+                  "I&apos;m a Website Developer",
                   2000,
-                  "I'm a Graphic Designer",
+                  "I&apos;m a Graphic Designer",
                   2000,
-                  "I'm a Digital Marketer",
+                  "I&apos;m a Digital Marketer",
                   2000,
                 ]}
                 wrapper="span"
@@ -49,7 +54,7 @@ const HeroSection = () => {
               />
             </h1>
             <p className="text-gray-300 font-mono text-lg lg:text-xl mb-8">
-              Hello! I’m Ushna, a passionate Web Developer and Graphic Designer. With a unique blend of technical expertise and creative flair, I specialize in building dynamic websites and crafting visually compelling user interfaces.
+              Hello! I&apos;m Ushna, a passionate Web Developer and Graphic Designer. With a unique blend of technical expertise and creative flair, I specialize in building dynamic websites and crafting visually compelling user interfaces.
             </p>
 
             <div className="flex gap-4 justify-center lg:justify-start">
@@ -85,3 +90,6 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
+
