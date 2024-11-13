@@ -1,12 +1,11 @@
-// ProjectsPage.js
 import React from 'react';
-import Projectcard from '../components/Projectcard';
+import Projectcard from './Projectcard';
 
 // Data for multiple projects
 const projects = [
   {
     id: 1,
-    title: 'Personal Portfolio  ',
+    title: 'Personal Portfolio',
     description: 'My portfolio website showcases my skills as a Web Developer and Graphic Designer, featuring a blend of dynamic web development and visually captivating design projects.',
     videoUrl: '/portfolioweb.mp4',
     githubUrl: 'https://github.com/Ushna-azhar',
@@ -16,27 +15,26 @@ const projects = [
     id: 2,
     title: 'E-commerce Website',
     description: 'A demo e-commerce website with advanced features.',
-    videoUrl: '/ss.mp4',  
-    githubUrl: 'https://github.com/Ushna-azhar',  
-    tags: [ 'Website'],
+    videoUrl: '/ss.mp4',
+    githubUrl: 'https://github.com/Ushna-azhar',
+    tags: ['Website'],
   },
   {
     id: 3,
     title: 'Snake Game',
-    description: 'A classic Snake Game built with HTML, CSS, and JavaScript, featuring responsive design, score tracking, and smooth animations',
+    description: 'A classic Snake Game built with HTML, CSS, and JavaScript, featuring responsive design, score tracking, and smooth animations.',
     videoUrl: '/snakegame.mp4',
     githubUrl: 'https://github.com/Ushna-azhar',
     tags: ['Game'],
   },
   {
     id: 4,
-    title: 'Resume Builder ',
+    title: 'Resume Builder',
     description: 'A Resume Builder app that allows users to create, customize, and download professional resumes with editable templates and real-time preview.',
     videoUrl: '/rg.mp4',
     githubUrl: 'https://github.com/Ushna-azhar',
     tags: ['Website'],
   },
-
 ];
 
 const ProjectsPage = () => {
